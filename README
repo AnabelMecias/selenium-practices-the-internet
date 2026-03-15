@@ -1,0 +1,72 @@
+# Selenium Practice Automation
+
+This project contains automated UI tests created to practice **Selenium test automation** using the demo website:
+
+https://the-internet.herokuapp.com/
+
+The goal of this repository is to strengthen automation testing skills by working with real-world web testing scenarios.
+
+## Purpose
+
+This project is focused on improving the following automation testing skills:
+
+- Selenium WebDriver usage
+- UI element interaction
+- Test structure and organization
+- Handling dynamic web elements
+- Practicing common QA automation scenarios
+
+The website used in this project provides many examples of typical UI behaviors found in real applications.
+
+## Technologies Used
+
+- Java
+- Selenium WebDriver
+- JUnit / Test framework
+- Maven
+- Visual Studio Code
+
+## Test Scenarios
+
+The project includes automated tests for different components of the demo site, such as:
+
+- Login authentication
+- Dropdown menus
+- Checkboxes
+- Alerts
+- Dynamic loading
+- File upload
+- Form inputs
+- Navigation elements
+
+Each test focuses on interacting with different types of UI elements and verifying expected behavior.
+
+## Project Structure
+selenium-practice/
+│
+├── src
+│ ├── main
+│ └── test
+│
+├── pom.xml
+└── README.md
+
+## Website Used for Practice
+
+The practice website used in this project is maintained by Elemental Selenium and provides many useful testing examples.
+
+https://the-internet.herokuapp.com/
+
+## Goals
+
+- Improve Selenium automation skills
+- Practice writing stable and maintainable test cases
+- Understand common UI testing patterns
+- Prepare for real-world QA automation scenarios
+
+## Future Improvements
+
+- Add Page Object Model structure
+- Increase test coverage
+- Add reporting
+- Integrate CI/CD pipeline
