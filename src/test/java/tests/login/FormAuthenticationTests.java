@@ -1,10 +1,12 @@
-package tests;
+package tests.login;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
 import pages.FormAuthentication;
+import pages.SecureArea;
 
 public class FormAuthenticationTests extends BaseTest {
     private FormAuthentication formAuthentication;
@@ -21,9 +23,9 @@ public class FormAuthenticationTests extends BaseTest {
     String validUsername = "tomsmith"; // Define valid credentials
     String validPassword = "SuperSecretPassword!"; // Define valid credentials
 
-    formAuthentication.enterUsername(validUsername); // Enter valid username
-    formAuthentication.enterPassword(validPassword); // Enter valid password
-    formAuthentication.clickLoginButton(); // Click the "Login" button
+    SecureArea secureArea = formAuthentication.login(validUsername, validPassword); // Perform login action using the page object method
+    System.out.println(secureArea.getSuccessMessage()); // Print the success message to the console
+    Assert.assertTrue(secureArea.getSuccessMessage().contains("You logged into a secure area!"), "Expected success message not found");
 
     }
 }

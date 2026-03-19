@@ -27,4 +27,10 @@ public class FormAuthentication {
         driver.findElement(loginButton).click();
         return new SecureArea(driver);
     }
+
+    public SecureArea login(String username, String password) {
+        enterUsername(username);
+        enterPassword(password);
+        return clickLoginButton();
+    }
 }

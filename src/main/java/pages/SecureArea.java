@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 public class SecureArea {
     
     private WebDriver driver;
-    private By successMessage = By.cssSelector("h4.subheader");
+    private By successMessage = By.cssSelector("#flash");
 
     public SecureArea(WebDriver driver) {
         this.driver = driver;
