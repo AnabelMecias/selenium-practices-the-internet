@@ -39,11 +39,5 @@ public class RemoveElementsPage {
     public List<WebElement> getDeleteButtons() {
         return driver.findElements(deleteButtons);
     }
-
-    public void clickOneDeleteButton() {
-        if (getDeleteButtonsCount() > 0) {
-            driver.findElement(deleteButtons).click();
-        }
-    }
     
 }
